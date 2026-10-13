@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Assignment - Practical</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            border-bottom: 2px solid black;
+            padding-bottom: 5px;
+        }
+
+        .question {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        pre {
+            background-color: #eee;
+            padding: 15px;
+            overflow-x: auto;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        #demo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Assignment: Introduction to JavaScript</h1>
+
+
+    <!-- Q10 -->
+
+    <div class="question">
+
+        <h2>Q10. Predict the Output</h2>
+
+        <p>JavaScript Code:</p>
+
+        <pre>
+let value = 25;
+console.log(typeof value);
+
+value = "JavaScript";
+console.log(typeof value);
+
+value = false;
+console.log(typeof value);
+        </pre>
+
+        <h3>Output:</h3>
+
+        <pre>
+number
+string
+boolean
+        </pre>
+
+        <p>
+            <strong>Explanation:</strong>
+            JavaScript is dynamically typed, so the same variable can
+            store different types of values.
+        </p>
+
+    </div>
+
+
+    <!-- Q11 -->
+
+    <div class="question">
+
+        <h2>Q11. Alert Box on Button Click</h2>
+
+        <p>
+            Click the button to display the message
+            <strong>"Welcome to JavaScript!"</strong>
+        </p>
+
+        <button onclick="showWelcome()">
+            Click Me
+        </button>
+
+        <pre>
+function showWelcome() {
+    alert("Welcome to JavaScript!");
+}
+        </pre>
+
+    </div>
+
+
+    <!-- Q12 -->
+
+    <div class="question">
+
+        <h2>Q12. Event-Driven Programming</h2>
+
+        <p id="demo">
+            Click the button to change this text.
+        </p>
+
+        <button id="myBtn">
+            Click Me
+        </button>
+
+        <p>
+            When the button is clicked, the paragraph text changes to
+            <strong>"Button was clicked!"</strong>
+        </p>
+
+    </div>
+
+
+    <!-- Q13 -->
+
+    <div class="question">
+
+        <h2>Q13. Complete JavaScript Web Page</h2>
+
+        <h1>My First JavaScript Page</h1>
+
+        <p>
+            Click the button below.
+        </p>
+
+        <button id="mainButton">
+            Click Me
+        </button>
+
+        <p>
+            Clicking the button will:
+        </p>
+
+        <ul>
+            <li>Show an alert message.</li>
+            <li>Change the background color to light blue.</li>
+        </ul>
+
+    </div>
+
+
+    <script>
+
+        // Q10
+
+        let value = 25;
+
+        console.log(typeof value);
+
+        value = "JavaScript";
+
+        console.log(typeof value);
+
+        value = false;
+
+        console.log(typeof value);
+
+
+        // Q11
+
+        function showWelcome() {
+
+            alert("Welcome to JavaScript!");
+
+        }
+
+
+        // Q12
+
+        document.getElementById("myBtn").onclick = function() {
+
+            document.getElementById("demo").textContent =
+                "Button was clicked!";
+
+        };
+
+
+        // Q13
+
+        console.log("JavaScript is running successfully!");
+
+        document.getElementById("mainButton").onclick = function() {
+
+            alert("Hello, B.Tech Student!");
+
+            document.body.style.backgroundColor = "lightblue";
+
+        };
+
+    </script>
+
+</body>
+</html>

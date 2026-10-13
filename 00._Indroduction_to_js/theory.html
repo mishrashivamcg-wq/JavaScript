@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Assignment - Theory</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 30px;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 30px;
+            border-bottom: 2px solid black;
+            padding-bottom: 5px;
+        }
+
+        .question {
+            background-color: white;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #999;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #ddd;
+        }
+
+        code {
+            background-color: #eee;
+            padding: 3px 6px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Assignment: Introduction to JavaScript</h1>
+
+    <!-- SECTION A -->
+
+    <h2>Section A: Short Answer Questions</h2>
+
+    <div class="question">
+        <h3>Q1. What does it mean when we say JavaScript is a high-level programming language?</h3>
+
+        <p>
+            JavaScript is a high-level programming language because it is easy
+            for humans to read and write. It hides complex computer operations
+            from the programmer.
+        </p>
+    </div>
+
+
+    <div class="question">
+        <h3>Q2. Is JavaScript a compiled language or an interpreted language?</h3>
+
+        <p>
+            JavaScript is commonly called an interpreted language. Modern
+            JavaScript engines also use Just-In-Time (JIT) compilation to
+            make the code run faster.
+        </p>
+    </div>
+
+
+    <div class="question">
+        <h3>Q3. Name the JavaScript engines used by the following browsers.</h3>
+
+        <ul>
+            <li><strong>Google Chrome:</strong> V8</li>
+            <li><strong>Mozilla Firefox:</strong> SpiderMonkey</li>
+            <li><strong>Apple Safari:</strong> JavaScriptCore</li>
+        </ul>
+    </div>
+
+
+    <div class="question">
+        <h3>Q4. What is Dynamic Typing in JavaScript?</h3>
+
+        <p>
+            Dynamic typing means that a variable can store different types
+            of values during the program.
+        </p>
+
+        <p>Example:</p>
+
+        <pre>
+let x = 10;
+x = "Hello";
+x = true;
+        </pre>
+    </div>
+
+
+    <div class="question">
+        <h3>Q5. Explain ECMAScript. What is its relation with JavaScript?</h3>
+
+        <p>
+            ECMAScript is the standard or specification that defines how
+            JavaScript should work. JavaScript is an implementation of
+            the ECMAScript standard.
+        </p>
+    </div>
+
+
+    <!-- SECTION B -->
+
+    <h2>Section B: Conceptual Questions</h2>
+
+
+    <div class="question">
+        <h3>Q6. Differentiate between a static website and a dynamic website.</h3>
+
+        <table>
+            <tr>
+                <th>Static Website</th>
+                <th>Dynamic Website</th>
+            </tr>
+
+            <tr>
+                <td>Content usually remains fixed.</td>
+                <td>Content can change according to users or data.</td>
+            </tr>
+
+            <tr>
+                <td>Mostly uses HTML and CSS.</td>
+                <td>Can use JavaScript, backend and databases.</td>
+            </tr>
+
+            <tr>
+                <td>Example: Simple portfolio website.</td>
+                <td>Example: Amazon website.</td>
+            </tr>
+        </table>
+    </div>
+
+
+    <div class="question">
+        <h3>Q7. Explain any two features of JavaScript that make it suitable for creating interactive web pages.</h3>
+
+        <ol>
+            <li>
+                <strong>Event Handling:</strong>
+                JavaScript can respond to events such as clicks,
+                typing and mouse movements.
+            </li>
+
+            <li>
+                <strong>DOM Manipulation:</strong>
+                JavaScript can change HTML content, elements and styles
+                without reloading the page.
+            </li>
+        </ol>
+    </div>
+
+
+    <div class="question">
+        <h3>Q8. List any four areas apart from web browsers where JavaScript is used.</h3>
+
+        <table>
+            <tr>
+                <th>Area</th>
+                <th>Framework / Library</th>
+            </tr>
+
+            <tr>
+                <td>Backend Development</td>
+                <td>Node.js</td>
+            </tr>
+
+            <tr>
+                <td>Mobile App Development</td>
+                <td>React Native</td>
+            </tr>
+
+            <tr>
+                <td>Desktop App Development</td>
+                <td>Electron</td>
+            </tr>
+
+            <tr>
+                <td>AI / ML Applications</td>
+                <td>TensorFlow.js</td>
+            </tr>
+        </table>
+    </div>
+
+
+    <div class="question">
+        <h3>Q9. Difference between internal and external JavaScript.</h3>
+
+        <p>
+            JavaScript can be written directly inside an HTML file using
+            the <code>&lt;script&gt;</code> tag.
+        </p>
+
+        <pre>
+&lt;script&gt;
+    alert("Hello");
+&lt;/script&gt;
+        </pre>
+
+        <p>
+            In external JavaScript, the code is written in a separate
+            <code>.js</code> file and connected to HTML.
+        </p>
+
+        <pre>
+&lt;script src="script.js"&gt;&lt;/script&gt;
+        </pre>
+
+        <p><strong>Advantages of external JavaScript:</strong></p>
+
+        <ol>
+            <li>The same JavaScript file can be used on multiple pages.</li>
+            <li>It keeps HTML code clean and easier to maintain.</li>
+        </ol>
+    </div>
+
+
+    <!-- SECTION E -->
+
+    <h2>Section E: Higher Order Thinking</h2>
+
+
+    <div class="question">
+        <h3>Q14. Why did JavaScript become so popular and multipurpose?</h3>
+
+        <p>
+            JavaScript became popular because it is easy to learn and works
+            directly with web browsers. It can create interactive websites
+            and has a large community and many useful libraries and frameworks.
+        </p>
+
+        <p>
+            <strong>Node.js</strong> made it possible to run JavaScript
+            outside the browser, which allowed developers to use it for
+            backend development.
+        </p>
+
+        <p>
+            <strong>ECMAScript updates</strong> regularly added new features
+            and improvements to JavaScript, making it more powerful and
+            useful for different types of applications such as web,
+            mobile, desktop and AI applications.
+        </p>
+    </div>
+
+</body>
+</html>
